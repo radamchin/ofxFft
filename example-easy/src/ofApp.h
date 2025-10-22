@@ -9,7 +9,7 @@ public:
 	void update();
 	void draw();
 	
-	void plot(vector<float>& buffer, float scale);
+	void plot(const vector<float>& buffer, float scale);
 	
 	ofxEasyFft fft;
 };

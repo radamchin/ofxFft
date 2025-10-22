@@ -24,7 +24,7 @@ void ofApp::draw() {
 	ofDrawBitmapString(msg, ofGetWidth() - 80, ofGetHeight() - 20);
 }
 
-void ofApp::plot(vector<float>& buffer, float scale) {
+void ofApp::plot(const vector<float>& buffer, float scale) {
 	ofNoFill();
 	int n = MIN(1024, buffer.size());
 	ofDrawRectangle(0, 0, n, scale);

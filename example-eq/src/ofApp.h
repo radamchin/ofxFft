@@ -17,7 +17,7 @@ public:
 
 	int plotHeight, bufferSize;
 
-	ofxFft* fft;
+	std::shared_ptr<ofxFft> fft;
 
 	float* audioInput;
 	float* fftOutput;

@@ -12,7 +12,7 @@ public:
 
 	int plotHeight, bufferSize;
 
-	ofxFft* fft;
+	std::shared_ptr<ofxFft> fft;
 	
 	ofMutex soundMutex;
 	vector<float> drawBins, middleBins, audioBins;

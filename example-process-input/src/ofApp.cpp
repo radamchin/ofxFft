@@ -21,10 +21,10 @@ void ofApp::draw() {
     ofDrawRectangle(824, 400, 200, 200);
     ofDrawRectangle(824, 600, 200, 200);
     
-    fft.drawHistoryGraph(ofPoint(824,0), LOW);
-    fft.drawHistoryGraph(ofPoint(824,200),MID );
-    fft.drawHistoryGraph(ofPoint(824,400),HIGH );
-    fft.drawHistoryGraph(ofPoint(824,600),MAXSOUND );
+    fft.drawHistoryGraph(glm::vec2(824,0), LOW);
+    fft.drawHistoryGraph(glm::vec2(824,200),MID );
+    fft.drawHistoryGraph(glm::vec2(824,400),HIGH );
+    fft.drawHistoryGraph(glm::vec2(824,600),MAXSOUND );
     ofDrawBitmapString("LOW",850,20);
     ofDrawBitmapString("HIGH",850,420);
     ofDrawBitmapString("MID",850,220);

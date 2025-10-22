@@ -15,7 +15,7 @@ public:
 
 	int plotHeight, bufferSize;
 
-	ofxFft* fft;
+	std::shared_ptr<ofxFft> fft;
 	
 	int spectrogramOffset;
 	ofImage spectrogram;

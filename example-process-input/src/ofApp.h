@@ -10,5 +10,5 @@ public:
 	void draw();
     void keyPressed(int key);
 	
-	ProcessFFT fft;
+	ofxProcessFFT fft;
 };
